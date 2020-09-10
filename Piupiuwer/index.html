@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Piupiuwer</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="wrapper-content content">
+            <aside class="sidebar">
+            
+            <ul class="list">
+                <li><a href="index.html"><img src="images/home.svg" alt="Home"> Página inicial</a></li>
+                <li><a href=""><img src="images/hashtag.svg" alt="Explore"></a>Explorar</li>
+                <li><a href=""><img src="images/notification.svg" alt="Notification"></a>Notificações</li>
+                <li><a href=""><img src="images/message.svg" alt="Menssagens"></a>Menssagens</li>
+                <li><a href=""><img src="images/save.svg" alt="Save"></a>Itens Salvos</li>
+                <li><a href=""><img src="images/note.svg" alt="Listas"></a>Listas</li>
+                <li><a href=""><img src="images/profile.svg" alt="Perfil"></a>Perfil</li>
+                <li><a href=""><img src="images/more_circle.svg" alt="Mais"></a>Mais</li>
+            </ul>
+            
+
+
+            <div id="profile" class="profile">
+                <img src="images/avatar.png" alt="Avatar" name="myAvatar">
+                <div class="info">
+                    <strong name="myName">Piupiu<span name="myUser">@Piupiu</span></strong>
+                </div>
+
+                <div class="more">
+                    <button><img src="images/arrow.svg" alt="More"></button>
+                </div>
+            </div>
+            
+            </aside>
+            <section class="timeline">
+                <nav>
+                    <a href="">Página Inicial</a>
+                </nav>
+          
+                <div class="container">
+                    <img class="avatar" src="images/avatar.png" alt="Avatar">
+                    <form id="insert">
+                        <div class="text">
+                            <textarea id="piu" name="piu" cols="30" rows="5" wrap="hard" placeholder="O que está acontecendo?" ></textarea>
+                            <span class="counter">0</span>
+                            <span class="counter">/140</span>
+                        </div>
+                    <button id="post">Piar</button>
+                    <ul id="message-error"></ul>
+                </div>
+
+                <span id="erro-ajax" class="invisible">Erro ao buscar os pacientes</span>
+
+                
+                <ul id="list" class="pius">
+                    
+                </ul>
+                
+
+
+
+            </section>
+
+            <aside class="widgets">
+                <div class="search-box">
+                    <img src="images/search.svg" alt="Pesquisa" class="magnifier">
+                    <input type="text" name="filter" id="search" placeholder="Buscar no Piupiuwer">
+                </div>
+                <div class="widget follow">
+                    <div class="title">
+                        <strong>Quem seguir</strong>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="profile">
+                                <img src="images/avatar.png" alt="Avatar">
+                                <div class="info">
+                                    <strong>Usuário1 <span>@Usuario1</span></strong>
+                                    <button id="follow">Follow</button>
+                                </div>
+                            </div>
+                            <a href="">x</a>
+                        </li>
+
+                        <li>
+                            <div class="profile">
+                                <img src="images/avatar.png" alt="Avatar">
+                                <div class="info">
+                                    <strong>Usuário2 <span>@Usuario2</span></strong>
+                                    <button id="follow">Follow</button>
+                                </div>
+                            </div>
+                            <a href="">x</a>
+                        </li>
+
+                        <li>
+                            <div class="profile">
+                                <img src="images/avatar.png" alt="Avatar">
+                                <div class="info">
+                                    <strong>Usuário3 <span>@Usuário3</span></strong>
+                                    <button id="follow">Follow</button>
+                                </div>
+                            </div>
+                            <a href="">x</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="widget trends">
+                    
+                </div>
+            </aside>
+        </div>
+        <script src="js/request.js"></script>
+        <script src="js/post.js"></script>
+        <script src="js/counter.js"></script>
+        <script src="js/filter.js"></script>
+        <script src="js/interact.js"></script>
+    </body>
+</html>
